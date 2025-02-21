@@ -39,6 +39,7 @@ class Comment(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     challenge = models.SlugField(default='a_slug')
     challenge = models.FloatField(default=3.0)
+   
 
     class Meta:
         ordering = ["created_on"]
