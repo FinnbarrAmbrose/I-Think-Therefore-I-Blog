@@ -1,1 +1,1 @@
-python-3.9.18
+.python-version 3.9.18
