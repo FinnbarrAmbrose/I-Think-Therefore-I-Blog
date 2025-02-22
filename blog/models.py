@@ -46,4 +46,11 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
-    
+
+class Event(models.Model):
+    event_id = models.AutoField(primary_key=True)
+    event_name = models.CharField(max_length=200)
+    event_date = models.DateTimeField()
+
+    def __str__(self):
+        return self.event_name
