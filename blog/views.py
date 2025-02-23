@@ -4,6 +4,11 @@ from django.views import generic
 from .models import Post, Event  # Import Event model
 
 # Create your views here.
+
+def home(request):
+    return render(request, "blog/home.html")
+
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
